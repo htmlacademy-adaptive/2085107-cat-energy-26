@@ -2,14 +2,14 @@
   font-family: "Oswald Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald Medium";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 body {
@@ -20,7 +20,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  width: 100%;
   background-color: #ffffff;
 }
 
@@ -126,21 +125,24 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  width: 100%;
-  min-height: 302px;
+  width: 320px;
+  min-height: 300px;
 }
 
 .hero-section__title {
+  margin: 0;
+  padding-top: 27px;
   font-family: "Oswald Medium", sans-serif;
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 33px;
   line-height: 36px;
   color: #ffffff;
 }
 
 .hero-section__slogan {
+  padding-top: 25px;
   font-family: "Oswald Regular", sans-serif;
   text-align: center;
   font-style: normal;
@@ -157,10 +159,6 @@ body {
   padding: 0;
 }
 
-.advantages__item {
-  background-color: #f2f2f2;
-}
-
 .advantages__title {
   font-family: "Oswald Medium", sans-serif;
   font-style: normal;
@@ -168,7 +166,9 @@ body {
   font-size: 24px;
   line-height: 37px;
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
@@ -180,6 +180,10 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 33px;
 }
 
 .advantages__link {
@@ -190,6 +194,12 @@ body {
   line-height: 16px;
   text-decoration: none;
   color: #444444;
+  padding-left: 19px;
+}
+
+.advantages__container {
+  margin: 20px;
+  background-color: #f2f2f2;
 }
 
 .instruction__title {
@@ -200,7 +210,7 @@ body {
   line-height: 40px;
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding-bottom: 42px;
 }
 
 .instruction__list {
@@ -213,21 +223,40 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  padding-bottom: 28px;
+}
+
+.instruction__item {
+  padding-bottom: 26px;
+}
+
+.instruction__description {
+  margin: 0;
 }
 
 .example {
   background-color: #f2f2f2;
+  padding-left: 20px;
+  min-height: 659px;
 }
 
 .example__title {
   font-family: "Oswald Medium", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 20px;
   color: #000000;
   margin: 0;
   padding: 0;
+}
+
+.example__title--main {
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-left: 20px;
 }
 
 .example__description {
@@ -261,6 +290,8 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
+  margin-top: 27px;
+  margin-bottom: 37px;
 }
 
 .main-form__description {
@@ -272,7 +303,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 0;
+  margin-bottom: 40px;
 }
 
 .main-form__required {
@@ -287,7 +318,12 @@ body {
 .fieldset-list {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
+}
+
+.fieldset-list__item {
+  padding-bottom: 41px;
 }
 
 .fieldset-list__label {
@@ -324,10 +360,12 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  margin-bottom: 25px;
 }
 
 .fieldset-contacts__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-family: "Oswald Medium", sans-serif;
   font-style: normal;
@@ -363,8 +401,13 @@ body {
   color: #444444;
 }
 
+.fieldset-contacts__item {
+  margin-bottom: 40px;
+}
+
 .fieldset-comment__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-family: "Oswald Medium", sans-serif;
   font-style: normal;
@@ -382,10 +425,12 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-bottom: 22px;
 }
 
 .fieldset-additional__title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-family: "Oswald Medium", sans-serif;
   font-style: normal;
@@ -399,6 +444,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.fieldset-additional__item {
+  margin-bottom: 25px;
 }
 
 .fieldset-additional__label {
@@ -418,6 +467,8 @@ body {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
+  padding-bottom: 42px;
 }
 
 .product-card__title {
@@ -428,6 +479,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-top: 103px;
 }
 
 .product-card__options {
@@ -444,6 +497,13 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 21px;
+}
+
+.product-card__td {
+  padding-right: 74px;
 }
 
 .additional__title {
@@ -453,6 +513,9 @@ body {
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .additional__th {
@@ -481,6 +544,8 @@ body {
   background-position: center;
   width: 100%;
   min-height: 289px;
+  margin-top: 55px;
+  margin-bottom: 35px;
 }
 
 .sale-block__description {
@@ -498,6 +563,7 @@ body {
 }
 
 .social__list {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -511,5 +577,9 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+}
+
+.social__logo {
+  padding: 40px 96px;
 }
 /*# sourceMappingURL=style.css.map */
