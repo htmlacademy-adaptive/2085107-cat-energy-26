@@ -1,0 +1,26 @@
+@use "../abstract" as *;
+
+.social {
+  background-color: $milk;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.html-logo {
+  text-decoration: none;
+  font-family: $arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.social__logo {
+  padding: 40px 96px;
+}

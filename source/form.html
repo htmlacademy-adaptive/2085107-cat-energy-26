@@ -3,30 +3,35 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page__body">
+  <div class="page-container">
   <header class="header">
     <a class="header__logo" href="index.html">
-      <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
+      <img class="header__logo" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
+    </a>
+    <a class="header__logo header__logo--center" href="index.html">
+      <img class="header__logo" src="img/cat-energy-logo.svg" width="101" height="18" alt="CAT ENERGY">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /></svg>
+          <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /> </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="navigation__container">
         <ul class="navigation__list">
           <li class="navigation__item ">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item ">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation__item--current">
-            <a href="form.html">Подбор программы</a>
+          <li class="navigation__item ">
+            <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -74,16 +79,16 @@
           </ul>
           <div class="fieldset-contacts">
             <h2 class="fieldset-contacts__title">Контактные данные (владельца кота)</h2>
-            <ul class="fieldset-contacts-list">
-              <li class="fieldset-contacts-list__item">
-                <label class="fieldset-contacts-list__label" for="email"> E-MAIL:* </label>
-                <input class="fieldset-contacts-list__input" type="email" placeholder="kuklachev@gmail.com"
+            <ul class="fieldset-contacts__list">
+              <li class="fieldset-contacts__item">
+                <label class="fieldset-contacts__label" for="email"> E-MAIL:* </label>
+                <input class="fieldset-contacts__input" type="email" placeholder="kuklachev@gmail.com"
                   id="email" required>
                 <img src="#" alt="">
               </li>
-              <li class="fieldset-contacts-list__item">
-                <label class="fieldset-contacts-list__label" for="tel"> ТЕЛЕФОН:* </label>
-                <input class="fieldset-contacts-list__input" type="tel" placeholder="8 (960) 900-60-90" id="tel"
+              <li class="fieldset-contacts__item">
+                <label class="fieldset-contacts__label" for="tel"> ТЕЛЕФОН:* </label>
+                <input class="fieldset-contacts__input" type="tel" placeholder="8 (960) 900-60-90" id="tel"
                   required>
                 <img src="#" alt="">
               </li>
@@ -97,30 +102,30 @@
         </div>
         <div class="fieldset-additional">
           <h2 class="fieldset-additional__title"> Дополнительно </h2>
-          <ul class="fieldset-additional-list">
-            <li class="fieldset-additional-list__item">
-              <label class="fieldset-additional-list__label"> Сахарозаменитель
-                <input class="fieldset-additional-list__input" type="checkbox" checked>
+          <ul class="fieldset-additional__list">
+            <li class="fieldset-additional__item">
+              <label class="fieldset-additional__label"> Сахарозаменитель
+                <input class="fieldset-additional__input" type="checkbox" checked>
               </label>
             </li>
-            <li class="fieldset-additional-list__item">
-              <label class="fieldset-additional-list__label"> Питьевая вода
-                <input class="fieldset-additional-list__input" type="checkbox">
+            <li class="fieldset-additional__item">
+              <label class="fieldset-additional__label"> Питьевая вода
+                <input class="fieldset-additional__input" type="checkbox">
               </label>
             </li>
-            <li class="fieldset-additional-list__item">
-              <label class="fieldset-additional-list__label"> Молоко
-                <input class="fieldset-additional-list__input" type="checkbox">
+            <li class="fieldset-additional__item">
+              <label class="fieldset-additional__label"> Молоко
+                <input class="fieldset-additional__input" type="checkbox">
               </label>
             </li>
-            <li class="fieldset-additional-list__item">
-              <label class="fieldset-additional-list__label"> Витамины
-                <input class="fieldset-additional-list__input" type="checkbox">
+            <li class="fieldset-additional__item">
+              <label class="fieldset-additional__label"> Витамины
+                <input class="fieldset-additional__input" type="checkbox">
               </label>
             </li>
           </ul>
         </div>
-        <button class="main-form__button" type="submit"> Отправить заявку</button>
+        <button class="main-form__button button" type="submit"> Отправить заявку</button>
         <span class="main-form__required"> * - Обязательные поля</span>
       </form>
       <article class="location">
@@ -132,7 +137,7 @@
     </section>
   </main>
   <footer class="social">
-    <img src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+    <img class="social__logo" src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link" href="https://vk.com/htmlacademy">
@@ -166,8 +171,9 @@
         <path
           d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
           fill="#666" /></svg>
-    </a>
+      </a>
   </footer>
+  </div>
 </body>
 
 </html>

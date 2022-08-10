@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@use "../sass/fonts.scss";
+@use "../sass/global.scss";
+@use "../sass/blocks/location.scss";
+@use "../sass/blocks/header.scss";
+@use "../sass/blocks/navigation.scss";
+@use "../sass/blocks/hero-section.scss";
+@use "../sass/blocks/advantages.scss";
+@use "../sass/blocks/instruction.scss";
+@use "../sass/blocks/example.scss";
+@use "../sass/blocks/main-form.scss";
+@use "../sass/blocks/fieldset-list.scss";
+@use "../sass/blocks/radio-list.scss";
+@use "../sass/blocks/fieldset-contacts.scss";
+@use "../sass/blocks/fieldset-comment.scss";
+@use "../sass/blocks/fieldset-additional.scss";
+@use "../sass/blocks/catalog.scss";
+@use "../sass/blocks/product-card.scss";
+@use "../sass/blocks/additional.scss";
+@use "../sass/blocks/sale-block.scss";
+@use "../sass/blocks/social.scss";

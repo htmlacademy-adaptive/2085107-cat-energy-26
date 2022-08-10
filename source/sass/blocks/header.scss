@@ -1,0 +1,15 @@
+@use "../abstract" as *;
+
+.header {
+  background-color: $white;
+  display: flex;
+  padding: 20px 10px;
+}
+
+.header__logo {
+  margin-right: 21px;
+}
+
+.header__logo--center {
+  margin: 0 20px;
+}

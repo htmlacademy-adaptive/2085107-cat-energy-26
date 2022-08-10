@@ -1,0 +1,32 @@
+@use "../abstract" as *;
+
+.fieldset-list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.fieldset-list__item {
+  padding-bottom: 41px;
+}
+
+.fieldset-list__label {
+  font-family: $oswald-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey;
+}
+
+.fieldset-list__input {
+  font-family: $oswald-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey;
+}

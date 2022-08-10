@@ -1,0 +1,20 @@
+@use "../abstract" as *;
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-family: $oswald-regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.navigation__item {
+  padding-bottom: 14px;
+}

@@ -1,0 +1,35 @@
+@use "../abstract" as *;
+
+.hero-section {
+  background-image: linear-gradient(hsl(97 53% 47% / 85%), hsl(97 53% 47% / 85%)), url("../img/index-background.png");
+  background-color: #adff2f;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 320px;
+  min-height: 300px;
+}
+
+.hero-section__title {
+  margin: 0;
+  padding-top: 27px;
+  font-family: $oswald-medium;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 36px;
+  color: $white;
+}
+
+.hero-section__slogan {
+  padding-top: 25px;
+  font-family: $oswald-regular;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
+}
