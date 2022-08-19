@@ -12,7 +12,7 @@
 }
 
 .fieldset-list__label {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -22,7 +22,7 @@
 }
 
 .fieldset-list__input {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,3 +30,18 @@
   text-transform: uppercase;
   color: $grey;
 }
+
+// .fieldset-list__input--name {
+//   width: 229px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 567px;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     width: 506px;
+//   }
+// }
+// .fieldset-list__input--age {
+//   width: 172px;
+// }

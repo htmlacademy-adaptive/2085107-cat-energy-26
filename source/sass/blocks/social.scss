@@ -1,7 +1,29 @@
 @use "../abstract" as *;
 
 .social {
+  display: flex;
   background-color: $milk;
+  width: 320px;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+  }
 }
 
 .social__list {
@@ -9,6 +31,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 34px;
 }
 
 .html-logo {
@@ -19,8 +42,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey;
+  padding-bottom: 30px;
 }
 
 .social__logo {
-  padding: 40px 96px;
+  padding-top: 30px;
 }

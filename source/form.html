@@ -3,40 +3,40 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page__body">
-  <div class="page-container">
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
-    </a>
-    <a class="header__logo header__logo--center" href="index.html">
-      <img class="header__logo" src="img/cat-energy-logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
+    <header class="header">
+      <div class="header-logo">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
+        <img class="header__logo-text" src="img/cat-energy-logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <button class="header__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /> </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="navigation__container">
-        <ul class="navigation__list">
-          <li class="navigation__item ">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item ">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item ">
-            <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
       </div>
-    </nav>
-  </header>
+      <nav class="navigation">
+        <div class="navigation__container">
+          <ul class="navigation__list">
+            <li class="navigation__item ">
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item ">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item ">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="main-container">
     <section class="fieldset-info">
       <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -44,20 +44,21 @@
         <p class="main-form__description">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
         <div class="fieldset-name-container">
+          <div class="fieldset-list-radio-wrapper">
           <ul class="fieldset-list">
             <li class="fieldset-list__item">
               <label class="fieldset-list__label">ИМЯ:*
-                <input class="fieldset-list__input" type="text" placeholder="Барсик" required>
+                <input class="fieldset-list__input fieldset-list__input--name" type="text" placeholder="Барсик" required>
               </label>
             </li>
             <li class="fieldset-list__item">
               <label class="fieldset-list__label">ВЕС (КГ):*
-                <input class="fieldset-list__input" type="number" placeholder="7" required>
+                <input class="fieldset-list__input fieldset-list__input--kg" type="number" placeholder="7" required>
               </label>
             </li>
             <li class="fieldset-list__item">
               <label class="fieldset-list__label">ВОЗРАСТ (ЛЕТ):*
-                <input class="fieldset-list__input" type="number" placeholder="7" required>
+                <input class="fieldset-list__input fieldset-list__input--age" type="number" placeholder="7" required>
               </label>
             </li>
           </ul>
@@ -77,6 +78,7 @@
                 id="dont-know">
             </li>
           </ul>
+          </div>
           <div class="fieldset-contacts">
             <h2 class="fieldset-contacts__title">Контактные данные (владельца кота)</h2>
             <ul class="fieldset-contacts__list">
@@ -129,10 +131,11 @@
         <span class="main-form__required"> * - Обязательные поля</span>
       </form>
       <article class="location">
+        <div class="location-container">
         <h3 class="location__title"> Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="location__description">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+        <p class="location__description">ул. Большая  Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="location__map"></div>
       </article>
     </section>
   </main>
@@ -173,7 +176,6 @@
           fill="#666" /></svg>
       </a>
   </footer>
-  </div>
 </body>
 
 </html>

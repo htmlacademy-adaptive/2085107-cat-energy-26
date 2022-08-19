@@ -1,7 +1,15 @@
 @use "../abstract" as *;
 
+.additional-container {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .additional__title {
-  font-family: $oswald-medium;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -13,7 +21,7 @@
 }
 
 .additional__th {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,4 +36,19 @@
   font-size: 14px;
   line-height: 14px;
   color: $grey;
+}
+
+.additional__tr {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 163px 132px 44px;
+    grid-template-rows: auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

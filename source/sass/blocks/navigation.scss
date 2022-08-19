@@ -1,18 +1,48 @@
 @use "../abstract" as *;
 
+.navigation {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-right: 20px;
+  }
+}
+
 .navigation__list {
   list-style-type: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
 }
 
 .navigation__link {
   text-decoration: none;
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+}
+
+.navigation__link--main {
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .navigation__item {

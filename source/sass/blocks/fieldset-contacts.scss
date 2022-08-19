@@ -4,7 +4,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  font-family: $oswald-medium;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -16,10 +16,15 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .fieldset-contacts__label {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -29,7 +34,7 @@
 }
 
 .fieldset-contacts__input {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

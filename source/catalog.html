@@ -3,43 +3,44 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page__body">
-  <div class="page-container">
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
-    </a>
-    <a class="header__logo header__logo--center" href="index.html">
-      <img class="header__logo" src="img/cat-energy-logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
+    <header class="header">
+      <div class="header-logo">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт Энерджи">
+        <img class="header__logo-text" src="img/cat-energy-logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <button class="header__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /> </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="navigation__container">
-        <ul class="navigation__list">
-          <li class="navigation__item ">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item ">
-            <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item ">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
       </div>
-    </nav>
-  </header>
+      <nav class="navigation">
+        <div class="navigation__container">
+          <ul class="navigation__list">
+            <li class="navigation__item ">
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item ">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item ">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="main-container">
     <section class="catalog">
       <h1 class="catalog__title"> Каталог продукции</h1>
+      <div class="catalog-wrapper">
       <article class="product-card">
         <img src="./img/chicken-pro-500.png" width="68" height="86" alt="Курица">
         <h3 class="product-card__title"> Cat Energy Pro 500г</h3>
@@ -178,10 +179,11 @@
         <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
         <button class="button product-card__button product-card__button--more" > Показать все</button>
       </div>
+      </div>
     </section>
     <section class="additional">
       <h2 class="additional__title">Дополнительные товары</h2>
-
+     <div class="additional-container">
     <table class="additional__table">
       <tr class="additional__tr">
         <th class="additional__th"> Сахарозаменитель </th>
@@ -212,12 +214,14 @@
         <img src="#" alt="">
         <p class="sale-block__description"> Закажите все и получите чехол для кота в подарок!</p>
       </div>
+     </div>
     </section>
     <article class="location">
+      <div class="location-container">
       <h3 class="location__title"> Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="location__description">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+      <p class="location__description">ул. Большая  Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="location__map"></div>
     </article>
   </main>
   <footer class="social">
@@ -257,6 +261,5 @@
           fill="#666" /></svg>
       </a>
   </footer>
-  </div>
 </body>
 </html>

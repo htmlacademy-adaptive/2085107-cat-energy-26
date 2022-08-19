@@ -2,18 +2,13 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $grey;
   background-color: $white;
-}
-
-.page-container {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -27,14 +22,14 @@ body {
   overflow: hidden;
 }
 
-.button {
-  font-family: $oswald-regular;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $white;
-  background-color: $green;
-  border-color: transparent;
+.main-container {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

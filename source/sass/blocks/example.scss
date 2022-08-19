@@ -7,7 +7,7 @@
 }
 
 .example__title {
-  font-family: $oswald-medium;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -15,6 +15,8 @@
   color: $black;
   margin: 0;
   padding: 0;
+  grid-column: 1/3;
+  padding-left: 29px;
 }
 
 .example__title--main {
@@ -23,26 +25,68 @@
   padding-bottom: 40px;
   padding-top: 25px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
+  margin: 0;
   font-family: $arial;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $grey;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 708px;
+  }
 }
 
-.example__info {
-  display: flex;
+.example-info-container {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .example__span {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__info {
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }

@@ -4,7 +4,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  font-family: $oswald-medium;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -16,6 +16,16 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 161px 161px;
+    column-gap: 120px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .fieldset-additional__item {
@@ -23,7 +33,7 @@
 }
 
 .fieldset-additional__label {
-  font-family: $oswald-regular;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
