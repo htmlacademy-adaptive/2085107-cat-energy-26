@@ -365,18 +365,18 @@ body {
   }
 }
 
-.header_main-logo {
+.header__main-logo {
   width: 33px;
   height: 37px;
 }
 @media (min-width: 768px) {
-  .header_main-logo {
+  .header__main-logo {
     width: 174px;
     height: 51px;
   }
 }
 @media (min-width: 1280px) {
-  .header_main-logo {
+  .header__main-logo {
     width: 202px;
     height: 59px;
   }
