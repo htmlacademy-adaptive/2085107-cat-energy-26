@@ -9,6 +9,7 @@ body {
   line-height: 18px;
   color: $grey;
   background-color: $white;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -22,14 +23,29 @@ body {
   overflow: hidden;
 }
 
-.main-container {
-  width: 320px;
+.global-container {
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 1280px;
+  }
+}
+
+.line-container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1130px;
   }
 }

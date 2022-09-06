@@ -5,18 +5,19 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 75%;
   color: $black;
   margin: 0;
   padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 67%;
   }
 }
 
 .instruction__list {
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,18 +25,21 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 112%;
   color: $grey;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 130%;
     display: grid;
     grid-template-columns: 280px 280px;
     grid-template-rows: auto auto;
-    grid-row-gap: 30px;
+    grid-row-gap: 200px;
     grid-column-gap: 150px;
+    counter-reset: instruction-counter;
+    padding-bottom: 140px;
+    padding-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,9 +48,69 @@
 }
 
 .instruction__item {
+  position: relative;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    counter-increment: instruction-counter;
+  }
+}
+
+.instruction__item::after {
+  font-family: $oswald;
+  width: 120px;
+  content: "";
+  position: absolute;
+  font-size: 280px;
+  color: $milk;
+  top: 100px;
+  z-index: -1;
+  right: -9px;
+
+  @media (min-width: $tablet-width) {
+    content: counter(instruction-counter);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    right: -15px;
+  }
+}
+
+
+.instruction__item--function-eat::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/function-eat.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.instruction__item--powder::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/powder.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.instruction__item--change-eat::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/change-eat.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.instruction__item--changes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/changes.svg");
+  width: 60px;
+  height: 60px;
 }
 
 .instruction__description {
   margin: 0;
+  padding-left: 70px;
 }

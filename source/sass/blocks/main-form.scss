@@ -1,16 +1,28 @@
 @use "../abstract" as *;
 
+.main-form {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
 .main-form__title {
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 67%;
   margin: 0;
   padding: 0;
   color: $black;
-  margin-top: 27px;
-  margin-bottom: 37px;
+  padding-top: 27px;
+  padding-bottom: 37px;
+  border-top: 1px solid #d3d3d3;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
 }
 
 .main-form__description {
@@ -18,11 +30,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 129%;
   text-transform: uppercase;
   color: $black;
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 150%;
+  }
 }
 
 .main-form__required {
@@ -32,13 +49,31 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+  }
+}
+
+.main-form__send {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .fieldset-list-radio-wrapper {
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
   }
 }

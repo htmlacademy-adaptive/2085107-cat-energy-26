@@ -5,11 +5,20 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 67%;
   color: $black;
   margin: 0;
   padding-bottom: 42px;
+  padding-top: 27px;
+  text-align: center;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    text-align: left;
+  }
 }
+
 
 .catalog-wrapper {
   display: block;

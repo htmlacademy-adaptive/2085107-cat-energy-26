@@ -3,12 +3,11 @@
 .social {
   display: flex;
   background-color: $milk;
-  width: 320px;
+  width: 100%;
   align-items: center;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +16,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,19 +30,48 @@
   margin: 0;
   padding: 0;
   padding-top: 34px;
+  padding-bottom: 30px;
+}
+
+.social__item {
+  padding-left: 26px;
+}
+
+.social__line {
+  display: block;
+  border: 1px solid #e6e6e6;
+  width: 280px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    display: none;
+  }
 }
 
 .html-logo {
+  display: flex;
   text-decoration: none;
   font-family: $arial;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 100%;
   color: $grey;
   padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.html-logo__description {
+  padding-right: 145px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }
 
 .social__logo {
   padding-top: 30px;
+  padding-bottom: 30px;
 }

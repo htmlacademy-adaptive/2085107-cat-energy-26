@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 
 .header {
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -22,21 +22,23 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 280px;
+  width: 100%;
   padding: 0 20px;
   min-height: 66px;
 
-  // @media (min-width: $tablet-width) {
-
-  // }
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .header__toggle {
   position: relative;
-  width: 24px;
-  height: 18px;
+  top: 5px;
+  right: 23px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 30px;
   border: none;
-  appearance: none;
   cursor: pointer;
   background-color: transparent;
 
@@ -44,6 +46,57 @@
     display: none;
   }
 }
+
+.header__toggle--close::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.header__toggle--open {
+  position: relative;
+  top: 5px;
+  right: 23px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header__toggle:active {
+  opacity: 30%;
+}
+
 
 .header__logo-text {
   position: absolute;

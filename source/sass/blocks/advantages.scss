@@ -6,6 +6,7 @@
   padding: 20px;
   margin-top: 40px;
 
+
   @media (min-width: $tablet-width) {
     width: 768px;
   }
@@ -22,12 +23,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
   }
 }
 
 .advantages__item {
   width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -36,7 +37,36 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     height: 374px;
+    margin-left: 80px;
   }
+}
+
+.advantages__item--slim::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: 22px;
+  top: 21px;
+
+  @media (min-width: $tablet-width) {
+    right: 61px;
+  }
+}
+
+.advantages__item--strong::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/cat-strong.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  left: 13px;
+  top: 21px;
 }
 
 .advantages__title {
@@ -44,17 +74,18 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 104%;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 31px;
   text-align: center;
   color: $black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 67%;
   }
 }
 
@@ -63,7 +94,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 112%;
   color: $grey;
   margin: 0;
   padding-bottom: 42px;
@@ -72,7 +103,21 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 130%;
+  }
+}
+
+.advantages__description::before {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  top: 234px;
+  left: 20px;
+  height: 2px;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -81,18 +126,35 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 67%;
   text-decoration: none;
   color: $grey;
   padding-left: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 100%;
   }
+}
+
+.advantages__link:hover {
+  opacity: 0.7;
+}
+
+.advantages__link:active {
+  opacity: 0.5;
+}
+
+.advantages__link > svg {
+  padding-left: 15px;
 }
 
 .advantages-container {
   margin-top: 20px;
   background-color: $milk;
+  padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 116px;
+  }
 }

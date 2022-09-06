@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  width: 320px;
+  width: 100%;
   height: 302px;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
     content: "";
     width: 715px;
     height: 694px;
-    right: 0;
+    right: -65px;
     top: -141px;
     background-image: linear-gradient(hsl(97 53% 47% / 85%), hsl(97 53% 47% / 85%)), url("../img/index-background-desktop.png");
     background-position: bottom;
@@ -54,14 +54,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 33px;
-  line-height: 36px;
+  line-height: 67%;
   color: $white;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-weight: 400;
     font-size: 60px;
-    line-height: 60px;
+    line-height: 67%;
     text-align: center;
     padding-left: 60px;
     padding-right: 237px;
@@ -71,7 +71,7 @@
     color: $black;
     font-weight: 400;
     font-size: 60px;
-    line-height: 60px;
+    line-height: 67%;
     text-align: center;
     padding: 0;
     padding-left: 130px;
@@ -87,7 +87,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 67%;
   color: $white;
   text-transform: uppercase;
 
@@ -95,7 +95,7 @@
     color: $black;
     font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 67%;
     padding-right: 262px;
     padding-left: 36px;
   }
@@ -104,14 +104,8 @@
     color: $black;
     font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 67%;
     width: 300px;
     padding-left: 190px;
   }
-}
-
-.hero-section__button {
-  margin-left: 120px;
-  margin-right: 404px;
-  margin-top: 50px;
 }
