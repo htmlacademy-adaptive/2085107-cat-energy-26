@@ -2,8 +2,13 @@
 
 .example {
   background-color: $milk;
-  padding-left: 20px;
   min-height: 659px;
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example__title {
@@ -11,7 +16,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 96%;
+  line-height: 111%;
   color: $black;
   margin: 0;
   padding: 0;
@@ -19,7 +24,7 @@
   padding-left: 29px;
 
   @media (min-width: $tablet-width) {
-    line-height: 67%;
+    line-height: 100%;
   }
 }
 
@@ -42,13 +47,13 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 112%;
+  line-height: 129%;
   color: $grey;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 130%;
+    line-height: 150%;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,38 +72,20 @@
   }
 }
 
-.example-info-container {
-  display: grid;
-  grid-template-columns: 124px 124px;
-  grid-template-rows: auto;
-  justify-content: space-evenly;
-  column-gap: 32px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
 .example__span {
   position: absolute;
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 100%;
   color: $black;
   left: 42px;
   top: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 123%;
   }
 }
 
@@ -115,5 +102,22 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
+  }
+}
+
+.example__little-title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    line-height: 100%;
   }
 }

@@ -1,17 +1,11 @@
 @use "../abstract" as *;
 
-.main-form {
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
-}
-
 .main-form__title {
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 67%;
+  line-height: 100%;
   margin: 0;
   padding: 0;
   color: $black;
@@ -65,15 +59,5 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-  }
-}
-
-.fieldset-list-radio-wrapper {
-  display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
   }
 }

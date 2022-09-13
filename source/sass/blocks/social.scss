@@ -1,27 +1,8 @@
 @use "../abstract" as *;
 
 .social {
-  display: flex;
   background-color: $milk;
   width: 100%;
-  align-items: center;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 147px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 147px;
-  }
 }
 
 .social__list {
@@ -74,4 +55,26 @@
 .social__logo {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+  }
 }

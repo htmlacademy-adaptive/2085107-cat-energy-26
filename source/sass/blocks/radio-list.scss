@@ -19,9 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    padding: 28px 30px;
-    padding-right: 149px;
+    padding-right: 502px;
+    padding-top: 30px;
+    padding-left: 88px;
   }
 }
 
@@ -42,6 +42,7 @@
 
 .radio-list__label {
   margin-left: 50px;
+  line-height: 112%;
 }
 
 .radio-list__input {
@@ -67,6 +68,11 @@
 
 .radio-list__mark:hover {
   border-color: #bababa;
+}
+
+.radio-list__input[type="radio"]:focus + .radio-list__mark {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 2px #cdcdcd;
 }
 
 .radio-list:disabled {
