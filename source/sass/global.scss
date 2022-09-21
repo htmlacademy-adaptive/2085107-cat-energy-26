@@ -42,7 +42,7 @@ body {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 600px;
+    width: 632px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,12 +59,14 @@ body {
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    margin-top: 33px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: flex-start;
+    margin-top: 50px;
+    flex-wrap: wrap;
   }
 }
 
@@ -83,22 +85,23 @@ body {
 
 .location-container {
   display: grid;
-  grid-template-columns: 138px 138px;
+  grid-template-columns: 1fr 1fr;
+  min-height: 112px;
 
   @media (min-width: $tablet-width) {
     column-gap: 290px;
-    margin-left: 70px;
+    min-height: 199px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     width: 565px;
     background-color: $white;
-    grid-template-columns: 176px 231px;
-    column-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
     height: 198px;
     position: absolute;
-    top: 95px;
+    top: 40px;
     left: 110px;
   }
 }
@@ -120,7 +123,7 @@ body {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    column-gap: 60px;
+    column-gap: 29px;
     row-gap: 90px;
     padding: 68px 30px;
   }
@@ -134,11 +137,20 @@ body {
 .advantages-container {
   margin-top: 20px;
   background-color: $milk;
-  padding-top: 20px;
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+    padding-right: 316px;
+    padding-left: 52px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 50px 116px;
+    padding: 0;
+    margin: 0;
+    padding-right: 51px;
+    padding-left: 52px;
+    min-height: 374px;
   }
 }
 
@@ -156,12 +168,47 @@ body {
   flex-wrap: wrap;
 }
 
-.html-logo__svg {
-  margin-right: 30px;
+.html-logo {
+  display: flex;
+  text-decoration: none;
+  font-family: $arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: $grey;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
 }
+
+.html-logo__description {
+  margin-right: 139px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    padding-top: 7px;
+  }
+}
+
 
 .main-form-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
   }
+}
+
+.product-card-wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 3px;
 }

@@ -18,20 +18,23 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 51px;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    margin-left: 50px;
+    margin-left: 31px;
+    margin-top: 53px;
   }
 }
 
 
 .header__toggle {
   position: relative;
-  top: 5px;
-  right: 23px;
+  top: 1px;
+  right: 0;
+  left: 2px;
   height: 24px;
   padding-top: 3px;
   padding-left: 30px;
@@ -57,8 +60,8 @@
 
 .header__toggle--open {
   position: relative;
-  top: 5px;
-  right: 23px;
+  top: 9px;
+  right: -2px;
   height: 24px;
   padding-top: 3px;
   padding-left: 30px;

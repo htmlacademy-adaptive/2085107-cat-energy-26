@@ -24,10 +24,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    height: 694px;
+    height: 703px;
     right: 0;
-    left: calc(( 100% - 1280px) / 2 + 686px);
-    top: -141px;
+    left: calc(( 100% - 1280px) / 2 + 640px);
+    top: -119px;
     background-image: linear-gradient(hsl(97 53% 47% / 85%), hsl(97 53% 47% / 85%)), url("../img/index-background-desktop.png");
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -43,39 +43,40 @@
 .hero-section__title {
   margin: 0;
   padding: 0;
-  padding-top: 27px;
   font-family: $oswald;
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 36px;
   line-height: 100%;
   color: $white;
-  margin-top: 72px;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-weight: 400;
     font-size: 60px;
-    text-align: center;
-    padding-left: 60px;
-    padding-right: 237px;
+    text-align: left;
+    padding-left: 84px;
+    padding-right: 140px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
     color: $black;
     font-weight: 400;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
     padding: 0;
-    padding-left: 130px;
+    padding-left: 109px;
+    padding-top: 88px;
     width: 450px;
   }
 }
 
 .hero-section__slogan {
   margin: 0;
-  padding-top: 25px;
+  margin-top: 26px;
   font-family: $oswald;
   text-align: center;
   font-style: normal;
@@ -90,8 +91,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 67%;
-    padding-right: 262px;
+    padding-top: 45px;
+    padding-right: 283px;
     padding-left: 36px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,16 +103,20 @@
     font-size: 20px;
     line-height: 67%;
     width: 300px;
-    padding-left: 190px;
+    padding-left: 99px;
   }
 }
 
 .hero-section__logo {
   display: block;
-  margin: 29px auto 0;
+  margin: 30px auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 23px 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: -190px;
-    margin-left: 500px;
+    margin-top: -260px;
+    margin-left: 479px;
   }
 }

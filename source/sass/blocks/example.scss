@@ -1,13 +1,49 @@
 @use "../abstract" as *;
 
 .example {
+  position: relative;
+  z-index: 1;
   background-color: $milk;
   min-height: 659px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.example--color::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35%;
+    background: linear-gradient(194deg, #eaeaea, $white);
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 69%;
+  }
+}
+
+.example__desc-container {
+  @media (min-width: $tablet-width) {
+    width: 676px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding-top: 153px;
+    padding-left: 29px;
   }
 }
 
@@ -21,7 +57,6 @@
   margin: 0;
   padding: 0;
   grid-column: 1/3;
-  padding-left: 29px;
 
   @media (min-width: $tablet-width) {
     line-height: 100%;
@@ -32,12 +67,19 @@
   font-size: 36px;
   line-height: 75%;
   padding-bottom: 40px;
-  padding-top: 25px;
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 67%;
+    padding-top: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 107px;
+    padding-left: 30px;
   }
 }
 
@@ -50,6 +92,7 @@
   line-height: 129%;
   color: $grey;
   padding-bottom: 20px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -57,18 +100,33 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 708px;
+    padding-top: 5px;
   }
 }
 
 .example__description {
-  width: 87px;
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  width: 75px;
   text-align: center;
-  padding-top: 32px;
-  padding-left: 20px;
+  padding-top: 45px;
+  padding-left: 23px;
+  padding-right: 36px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 142px;
+    font-size: 14px;
+    padding-top: 65px;
+    padding-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-left: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -79,6 +137,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
+  text-transform: uppercase;
   color: $black;
   left: 42px;
   top: 14px;
@@ -86,11 +145,32 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 123%;
+    left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 58px;
+  }
+}
+
+.example__space {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -18px;
+    margin-left: 237px;
   }
 }
 
 .example__span--days {
   left: 19px;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
 }
 
 .example__info {
@@ -101,9 +181,40 @@
 
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 162px;
+    background-image: url("../img/slider-border-tablet.svg");
+    min-height: 72px;
   }
 }
+
+.example__info--days {
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 65px;
+  }
+}
+
+.example__info--weight {
+  @media (min-width: $desktop-width) {
+    margin-left: 29px;
+  }
+}
+
+// .example__info--weight {
+//   @media (min-width: $tablet-width) {
+//     margin-left: -30px;
+//   }
+// }
+
+// .example__info--days {
+//   @media (min-width: $tablet-width) {
+//     margin-left: -30px;
+//   }
+// }
 
 .example__little-title {
   font-family: $oswald;
@@ -114,10 +225,23 @@
   color: $black;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-left: 45px;
+  min-width: 188px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     line-height: 100%;
+    font-size: 20px;
+    padding-left: 119px;
+    padding-top: 10px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 31px;
+    padding-top: 54px;
+    text-align: left;
   }
 }

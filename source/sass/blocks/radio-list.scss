@@ -6,24 +6,27 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
+  margin-top: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
-  }
-
-  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 60px;
     border: 1px solid #e7e7e7;
-    padding: 30px;
-    padding-right: 100px;
+    padding: 25px;
+    width: 578px;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 279px;
-    padding-top: 30px;
-    padding-left: 37px;
-    min-width: 236px;
-    margin-left: 47px;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 55px;
+    width: 1008px;
+    height: 196px;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -39,12 +42,25 @@
 
   @media (min-width: $tablet-width) {
     line-height: 100%;
+    margin-top: 13px;
+    margin-left: 15px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+    margin-left: -16px;
+    margin-bottom: 14px;
   }
 }
 
 .radio-list__label {
   line-height: 112%;
   margin-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .radio-list__input {
@@ -62,9 +78,14 @@
   background-color: $white;
   border: 1px solid #cdcdcd;
   appearance: none;
+  margin-top: -6px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin: 0;
+    margin-left: 26px;
+    margin-top: -11px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -84,11 +105,16 @@
 .radio-list__input[type="radio"]:checked + .radio-list__mark::before {
   content: "";
   position: absolute;
-  left: 9px;
+  left: 11px;
   top: 8px;
   margin: auto;
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
   background-color: $green;
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    left: 10px;
+    top: 12px;
+  }
 }
