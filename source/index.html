@@ -9,9 +9,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -53,7 +51,7 @@
       <section class="hero-section global-container">
         <h1 class="hero-section__title">Функциональное<br>питание для котов</h1>
         <p class="hero-section__slogan">Занялся собой? Займись котом!</p>
-        <button class="button hero-section__button" type="button">Подобрать программу</button>
+        <a class="button hero-section__button" href="catalog.html">Подобрать программу</a>
         <picture>
           <source type="image/webp" media="(min-width: 1280px)"
             srcset="img/hero-logo-desktop.webp 1x, img/hero-logo-desktop@2x.webp 2x">
@@ -84,7 +82,7 @@
         </li>
         <li class="advantages__item advantages__item--strong">
           <div class="advantages-container">
-            <h3 class="advantages__title advantages__tittle--fat"> Набор массы </h3>
+            <h3 class="advantages__title advantages__title--fat"> Набор массы </h3>
             <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="advantages__link" href="catalog.html">Каталог PRO
@@ -148,6 +146,9 @@
       <div class="comparison">
         <figure class="comparison__container">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/comparison-skinny-tablet.webp 1x, img/comparison-skinny-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/comparison-skinny-mobile.webp 1x, img/comparison-skinny-mobile@2x.webp 2x">
             <source media="(min-width: 768px)"
               srcset="img/comparison-skinny-tablet.png 1x, img/comparison-skinny-tablet@2x.png 2x">
             <img class="comparison__skinny" src="img/comparison-skinny-mobile.png"
@@ -155,6 +156,9 @@
           </picture>
           <div class="comparison__top">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/comparison-fat-tablet.webp 1x, img/comparison-fat-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/comparison-fat-mobile.webp 1x, img/comparison-fat-mobile@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/comparison-fat-tablet.png 1x, img/comparison-fat-tablet@2x.png 2x">
               <img class="comparison__fat" src="img/comparison-fat-mobile.png" srcset="img/comparison-fat-mobile@2x.png"
@@ -189,31 +193,33 @@
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link" href="https://vk.com/htmlacademy">
-          <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="social__svg" width="28" height="22" viewBox="0 0 28 22" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#vk"></use>
           </svg>
+          <span class="visually-hidden">Группа ВК.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-          <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="social__svg" width="28" height="22" viewBox="0 0 28 22" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#youtube"></use>
           </svg>
-
+          <span class="visually-hidden">Ютуб канал.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://t.me/htmlacademy_sales">
-          <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="social__svg" width="28" height="22" viewBox="0 0 28 22" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#tg"></use>
           </svg>
+          <span class="visually-hidden">Телеграм канал.</span>
         </a>
       </li>
     </ul>
     <span class="social__line"></span>
     <a class="html-logo" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="html-logo__description">HTML Academy</span>
-      <svg class="html-logo__svg" width="27" height="34" viewBox="0 0 27 34" fill="none"
+      <svg class="html-logo__svg" width="27" height="34" viewBox="0 0 27 34"
         xmlns="http://www.w3.org/2000/svg">
         <use href="img/sprite.svg#html-footer"></use>
       </svg>
