@@ -38,7 +38,7 @@ body {
 }
 
 .line-container {
-  width: 320px;
+  width: 276px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -133,7 +133,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: row;
-    column-gap: 0;
+    column-gap: 20px;
     row-gap: 0;
   }
 }

@@ -22,8 +22,10 @@
 .fieldset-contacts__title {
   margin: 0;
   padding: 0;
-  margin-right: 118px;
+  margin-right: 85px;
   margin-bottom: 35px;
+  margin-left: -23px;
+  padding-left: 21px;
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
@@ -37,10 +39,16 @@
   @media (min-width: $tablet-width) {
     line-height: 100%;
     font-size: 36px;
+    margin: 0;
+    padding-left: 42px;
+    margin-left: -41px;
+    padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -45px;
+    margin-left: -76px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
 }
 
@@ -60,6 +68,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
   }
 }
 
